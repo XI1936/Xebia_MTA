@@ -8,7 +8,7 @@ import { AppServiceService } from '../service/app-service.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private appService: AppServiceService) {}
+  constructor(private appService: AppServiceService,private router: Router) {}
   username;
   password;
 
@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
         console.log(error);
       }
     );
+    this.router.navigate(['/home']);
   }
   email(username) {
     this.username = username.viewModel;
