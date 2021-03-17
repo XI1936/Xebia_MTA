@@ -1,4 +1,4 @@
-## Xebia_MTA
+## Xebia_MTN
 
 ## Please follow API initial setup
 
