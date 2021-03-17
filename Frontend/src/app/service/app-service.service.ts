@@ -7,7 +7,7 @@ export class AppServiceService {
 
   constructor(private http: HttpClient) { }
 
-  ssubmitLoginData(data) {
+  submitLoginData(data) {
     const url = `http://localhost:1010/login`;
     console.log(data);
 

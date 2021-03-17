@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       username: this.username,
       password: this.password,
     };
-    this.appService.ssubmitLoginData(data).subscribe(
+    this.appService.submitLoginData(data).subscribe(
       (response) => {
         console.log(response);
         console.log(response.status);
