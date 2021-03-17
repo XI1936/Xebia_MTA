@@ -7,7 +7,7 @@
 >npm run devStart </br>
 
 Api will runing on port(1010) below url of the api
-##http://localhost:1010/login
+http://localhost:1010/login
 
 ![](https://raw.githubusercontent.com/XI1936/Xebia_MTA/master/Backend/image.png)
 
