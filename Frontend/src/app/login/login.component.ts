@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(private appService: AppServiceService,private router: Router) {}
   username;
   password;
-
+  isInvalid:boolean=false;
   ngOnInit(): void {}
   login() {
     console.log(this.username);
@@ -22,15 +22,12 @@ export class LoginComponent implements OnInit {
     };
     this.appService.submitLoginData(data).subscribe(
       (response) => {
-        console.log(response);
-        console.log(response.status);
-      
+        this.router.navigate(['/home']);
       },
-      (error)=>{
-        console.log(error);
+      (err)=>{
+        this.isInvalid=true;
       }
     );
-    this.router.navigate(['/home']);
   }
   email(username) {
     this.username = username.viewModel;

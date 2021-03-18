@@ -4,7 +4,7 @@
       <div class="row">
   
         <div class="col">
-          <div *ngIf="false" class="alert alert-danger" >
+          <div *ngIf="isInvalid" class="alert alert-danger" >
             Invalid Username or Password
           </div>
           <input id="username" type="text" name="username" placeholder="Username"  ngModel #username='ngModel' required (change)='email(username)'  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">

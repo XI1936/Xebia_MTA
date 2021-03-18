@@ -11,6 +11,6 @@ export class AppServiceService {
     const url = `http://localhost:1010/login`;
     console.log(data);
 
-    return this.http.post<any>(url, data);
+    return this.http.post<any>(url, data,{responseType : 'text' as 'json'});
 }
 }
